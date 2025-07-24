@@ -14,11 +14,13 @@
   "dependencies": {
     "next": "^15.4.3",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "three": "^0.178.0"
   },
   "devDependencies": {
     "@types/node": "24.1.0",
     "@types/react": "19.1.8",
+    "@types/three": "^0.178.1",
     "typescript": "5.8.3"
   }
 }
