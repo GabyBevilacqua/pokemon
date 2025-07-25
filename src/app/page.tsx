@@ -1,6 +1,6 @@
 "use client";
 
-import Background from "../components/background/Background";
+import Background from "../components/background";
 
 
 export default function Page() {

@@ -15,18 +15,6 @@ import {
     HemisphereLight
 } from "three";
 
-const crearSkybox = (scene) => {
-            // creando skybox  no se vera hasta que creemos iluminacion
-        const Skygeometry = new SphereGeometry(360, 25, 25);
-        const loader = new TextureLoader();
-        const texture = loader.load('/custom-sky.png');
-        const material2 = new MeshPhongMaterial({
-            map: texture
-        })
-        const skybox = new Mesh(Skygeometry, material2);
-        skybox.material.side = BackSide;
-        scene.add(skybox);
-}
 
 export default class Background extends Component {
 
@@ -51,9 +39,6 @@ export default class Background extends Component {
         const material = new MeshBasicMaterial({ color: 0x00ff00 });
         const cube = new Mesh(geometry, material);
         scene.add(cube);
-
-        // creando skybox
-        crearSkybox(scene);
         
         //creando la iluminacion
         scene.add(new AmbientLight(0xffffff, 0.8));
