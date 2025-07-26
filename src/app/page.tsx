@@ -10,8 +10,8 @@ export default function Page() {
   // This will create the 3D scene and render it in the background
   // deben estar en la misma linea porque sino no lo trae !!!
   return (
-    <div className="div">
-      <div className="container">
+    <div>
+      <div id="container">
         <Section />
         <Section />
         <Section />

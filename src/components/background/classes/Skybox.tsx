@@ -4,7 +4,7 @@ export default class Skybox {
 
     constructor(scene) {
             // creando skybox  no se vera hasta que creemos iluminacion
-        const Skygeometry = new SphereGeometry(360, 25, 25);
+        const Skygeometry = new SphereGeometry(360, 25, 25); //(360, 60, 40); // Más subdivisiones = mejor proyección
         const loader = new TextureLoader();
         const texture = loader.load('/custom-sky.png');
         const material2 = new MeshPhongMaterial({
