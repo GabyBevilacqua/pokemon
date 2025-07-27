@@ -9,6 +9,7 @@ import Entei from "../classes/pokemon/Entei";
 import Groudon from "../classes/pokemon/Groudon";
 import Charizard from "../classes/pokemon/Charizard";
 import Zekrom from "../classes/pokemon/Zekrom";
+import Grass from "../classes/pokemon/Grass";
 
 
 export default class Scene extends SceneThree {
@@ -26,6 +27,7 @@ export default class Scene extends SceneThree {
         new Groudon(this, loader)
         new Charizard(this, loader)
         new Zekrom(this, loader)
+        new Grass(this, loader);
         this.update(renderer)
     }
 
